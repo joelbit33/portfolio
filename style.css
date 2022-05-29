@@ -1,42 +1,50 @@
+/* GENERAL STYLING */
 body {
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    max-width: 1200px;
-    margin: auto;
-    height: 1500px;
+    margin: 0;
 }
 
-/* Add a black background color to the top navigation */
+#text-highlight {
+    color: #e63946;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+
+/*TOP NAVBAR SECTION, 
+CREDIT GOES TO W3SCHOOLS: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 .topnav {
-    background-color: white;
+    background: rgba(0,20,35,0.5);
     overflow: hidden;
     position: sticky;
     top: 0;
+    max-width: 1200px;
+    margin: auto;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
     float: left;
     display: block;
-    color: gray;
+    color: white;
     text-align: center;
     padding: 14px 26px;
     text-decoration: none;
     font-size: 17px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
     color: #001423;
 }
 
-/* Add an active class to highlight the current page */
 .topnav a.active {
     background-color: #001423;
     color: white;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
 }
@@ -47,18 +55,15 @@ body {
     flex-direction: column;
 }
 
+/* HERO SECTION */
 #hero-section {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 65vh;
     align-items: center;
     gap: 7em;
-    margin-top: 13vh;
+    margin-top: 10vh;
     padding: 0 2em;
-}
-
-#text-highlight {
-    color: #e63946;
 }
 
 .hero-introduction {
@@ -75,6 +80,7 @@ body {
     font-size: 24px;
     font-weight: 100;
 }
+
 .hero-logos {
     display: flex;
     flex-direction: row;
@@ -85,12 +91,15 @@ body {
     flex-wrap: wrap;
 }
 
+/* PORTFOLIO SECTION */
 #portfolio-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #001423;
+    color: white;
 }
 
 #portfolio-section h2 {
@@ -102,7 +111,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    column-gap: 4em;
 }
+
 .case {
     display: flex;
     justify-content: center;
@@ -121,7 +132,7 @@ body {
 
 .case-image {
     border-radius: 6%;
-    background-color: #001423;
+    background-color: #e63946;
     width: 320px;
     height: 220px;
 }
@@ -139,6 +150,40 @@ body {
     font-weight: 200;
 }
 
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+#contact-section h2 {
+    font-size: 34px;
+    font-style: italic;
+    text-align: center;
+}
+
+#contact-section .contact-box {
+    border: 1px solid #e63946 ;
+
+    padding: 5em 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #001423;
+    color: white;
+    text-align: right;
+}
+
+footer p {
+    margin: 1em 2em;
+    font-weight: 100;
+    font-size: 12px;
+}
 
 
 
