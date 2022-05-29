@@ -7,38 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joel</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5c4961de5d.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <h1>Joel</h1>
-            </a>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">J.O Nilsson</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="#hero-section">About</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="page-container">
+        <div id="hero-section">
+            <div class="hero-introduction">
+                <h2>Hi, I'm Joel!</h2>
+                <p>Junior webdeveloper based in Stockholm, Sweden.</p>
+            </div>
+            <div class="hero-logos">
+                <i class="fa-brands fa-html5 fa-5x fa-fade" style="--fa-animation-duration: 1.7s; --fa-fade-opacity: 0.6;"></i>
+                <i class="fa-brands fa-css3-alt fa-5x fa-fade" style="--fa-animation-duration: 1.8s; --fa-fade-opacity: 0.6;"></i>
+                <i class="fa-brands fa-js fa-5x fa-fade" style="--fa-animation-duration: 1.9s; --fa-fade-opacity: 0.6;"></i>
+            </div>
         </div>
-        <ul class="navbar">
-            <li><a href="https://github.com/joelbit33" target="_blank">Work</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </header>
-    <div class="content">
-        <div class="left">
-            <h2>Hello, I'm Joel</h2>
-            <p>Currently studying web development on <a href="https://www.theodinproject.com/">The Odin Project</a>. I
-                will update my work and progress via this site.
-            </p>
-            <p>This website will improve as I dig deeper into CSS and JavaScript.</p>
-            <p>Contact me if you have questions or feedback.</p>
-        </div>
-        <div class="right">
-            <img src="images/cool_picture.jpg" alt="Cool Picture">
+
+        <div class="portfolio-section">
+            <div class="case">
+                <div class="case-image"></div>
+                <div class="case-summary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi fugiat
+                    voluptatem suscipit pariatur, labore quod tempora incidunt reiciendis obcaecati quas officia maxime
+                    perferendis! Assumenda itaque adipisci velit cupiditate iure ex!</div>
+            </div>
         </div>
     </div>
-    <footer>
-        Photo by Martijn Baudoin on <a href="https://unsplash.com/">Unsplash</a>
-    </footer>
 
+
+    <script src="script.js"></script>
 </body>
 
 </html>
